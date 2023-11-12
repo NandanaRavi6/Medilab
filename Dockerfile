@@ -22,7 +22,7 @@ ENV CATALINA_HOME /opt/tomcat
 ENV PATH $CATALINA_HOME/bin:$PATH
 
 # Copy the sample application (replace 'sample.war' with your application's war file)
-COPY target/*.war $CATALINA_HOME/webapps/*.war
+COPY target/WebAppCal-0.0.6*.war $CATALINA_HOME/webapps/WebAppCal-0.0.6.war.war
 
 # Expose the default Tomcat port
 EXPOSE 8080
